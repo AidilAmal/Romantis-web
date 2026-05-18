@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untuk Sayang 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="gate-body">
+  <canvas id="particleCanvas" class="bg-canvas"></canvas>
+  <div class="float-hearts"></div>
+
+  <main id="pinScreen" class="gate-shell">
+    <div class="lock-icon">🔐</div>
+    <span class="kicker">Masuk pakai tanggal spesial</span>
+    <h1 style="font-size:clamp(2rem,8vw,3.7rem)">Ada pesan buat kamu</h1>
+    <p class="lead">Masukin PIN dulu yaa sayanggg🥰🥰🥰🥰.</p>
+    <form id="pinForm">
+      <input id="pinInput" class="pin-input" inputmode="numeric" maxlength="12" placeholder="••••••" autocomplete="off">
+      <button class="btn btn-primary" type="submit">Buka Pesannya 💗</button>
+      <p id="pinError" class="error"></p>
+    </form>
+  </main>
+
+  <main id="introScreen" class="gate-shell intro-card hidden">
+    <img id="introGif" class="intro-gif" alt="kartun lucu">
+    <span class="kicker">Pesan damai dulu yaa</span>
+    <h1 id="introTitle" style="font-size:clamp(1.9rem,7vw,3.4rem)"></h1>
+    <p id="introText" class="lead"></p>
+    <div id="choiceZone" class="choice-zone">
+      <button id="yesBtn" class="btn btn-green" type="button">Iya</button>
+      <button id="noBtn" class="btn btn-red" type="button">Tidak</button>
+    </div>
+  </main>
+
+  <main id="thanksScreen" class="gate-shell thanks-card hidden">
+    <h1 id="thanksTitle" style="font-size:clamp(2rem,7vw,3.6rem)"></h1>
+    <img id="hugGif" class="intro-gif" alt="kartun pelukan">
+    <p id="thanksText" class="lead"></p>
+    <button id="continueBtn" class="btn btn-primary" type="button">Lanjut ke Web Kita 💗</button>
+  </main>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gate.js"></script>
+</body>
+</html>

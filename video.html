@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video - Our Little Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="particleCanvas" class="bg-canvas"></canvas><div class="float-hearts"></div>
+  <nav class="navbar">
+  <a class="brand" href="home.html"><span class="brand-mark">💗</span><span>Our Little Web</span></a>
+  <button class="menu-toggle" aria-label="Buka menu">☰</button>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="love.html">Love</a>
+    <a href="music.html">Music</a>
+    <a href="memory.html">Memory</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="container section">
+    <span class="kicker">🎞️ Album video geser</span>
+    <h1 style="font-size:clamp(2rem,5vw,4rem)">Buku video JJ kita</h1>
+    <p class="lead">Masukin video JJ kamu sama dia ke folder <b>assets/video</b>, lalu atur judul, poster, dan caption-nya dari <b>assets/js/config.js</b>.</p>
+
+    <section class="video-book-shell">
+      <div id="videoBookView" class="video-book-view" tabindex="0" aria-label="Buku video, geser kanan kiri untuk pindah halaman">
+        <article id="videoBookPage" class="video-book-page"></article>
+      </div>
+      <div class="book-controls">
+        <button id="prevVideo" class="btn btn-soft" type="button">← Video sebelumnya</button>
+        <span id="videoCount" class="kicker"></span>
+        <button id="nextVideo" class="btn btn-primary" type="button">Video berikutnya →</button>
+      </div>
+      <p class="video-swipe-note">↔ Bisa klik tombol atau geser bukunya pelan-pelan.</p>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script><script src="assets/js/main.js"></script><script src="assets/js/video.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music - Our Little Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="particleCanvas" class="bg-canvas"></canvas><div class="float-hearts"></div>
+  <nav class="navbar">
+  <a class="brand" href="home.html"><span class="brand-mark">💗</span><span>Our Little Web</span></a>
+  <button class="menu-toggle" aria-label="Buka menu">☰</button>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="love.html">Love</a>
+    <a href="music.html">Music</a>
+    <a href="memory.html">Memory</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="container section">
+    <span class="kicker">🎧 Spotify mood</span>
+    <h1 style="font-size:clamp(2rem,5vw,4rem)">Playlist buat mu</h1>
+    <p class="lead">Masukin link Spotify track atau playlist.</p>
+    <section class="music-layout">
+      <aside class="spotify-panel">
+        <h2>Tambah lagu</h2>
+        <form id="songForm">
+          <label>Judul lagu</label>
+          <input id="songTitle" class="input" placeholder="Contoh: Sempurna">
+          <label>Artist</label>
+          <input id="songArtist" class="input" placeholder="Contoh: Andra & The Backbone">
+          <label>Link Spotify</label>
+          <input id="songUrl" class="input" placeholder="https://open.spotify.com/track/...">
+          <button class="btn btn-primary" type="submit" style="width:100%">Tambah ke playlist</button>
+        </form>
+        <button id="clearSongs" class="btn btn-soft" type="button" style="width:100%;margin-top:10px">Reset tambahan lokal</button>
+      </aside>
+      <section id="songList" class="spotify-list"></section>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script><script src="assets/js/main.js"></script><script src="assets/js/music.js"></script>
+</body>
+</html>

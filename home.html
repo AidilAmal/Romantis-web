@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Our Little Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="particleCanvas" class="bg-canvas"></canvas><div class="float-hearts"></div>
+  <nav class="navbar">
+  <a class="brand" href="home.html"><span class="brand-mark">💗</span><span>Our Little Web</span></a>
+  <button class="menu-toggle" aria-label="Buka menu">☰</button>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="love.html">Love</a>
+    <a href="music.html">Music</a>
+    <a href="memory.html">Memory</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="container">
+    <section class="hero-grid">
+      <div>
+        <span class="kicker">💌 Dari aku yang masih mau belajar</span>
+        <h1 id="homeTitle"></h1>
+        <p id="homeText" class="lead"></p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="love.html">Buka Love Page</a>
+          <a class="btn btn-soft" href="#galleryGrid">Lihat Kenangan</a>
+        </div>
+      </div>
+      <div class="love-card">
+        <div class="hero-photo"><img id="heroImage" src="" alt="Foto kita"></div>
+        <div class="sticker-note">Kita ngobrol baik-baik yaa 🥺</div>
+      </div>
+    </section>
+    <section class="section">
+      <span class="kicker">📸 Foto-foto kecil kita</span>
+      <h1 style="font-size:clamp(2rem,5vw,4rem)">Memory yang bisa diklik</h1>
+      <p class="lead">Klik salah satu foto buat masuk ke halaman detail dan isi ceritanya.</p>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>

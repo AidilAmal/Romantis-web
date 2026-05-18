@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love - Our Little Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dark-love love-experience-page">
+  <canvas id="particleCanvas" class="bg-canvas"></canvas>
+  <nav class="navbar">
+    <a class="brand" href="home.html"><span class="brand-mark">💗</span><span>Our Little Web</span></a>
+    <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="love.html">Love</a>
+      <a href="music.html">Music</a>
+      <a href="memory.html">Memory</a>
+      <a href="video.html">Video</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container love-page-wrap">
+    <section class="love-hero-copy">
+      <span class="kicker love-kicker">💞 Love Particle</span>
+      <h1>Hati kecil ini bisa dibenerin bareng-bareng</h1>
+      <p>Awalnya pecah jadi partikel kecil. Pencet tombolnya, nanti hati mungilnya nyatu lagi, terus foto-foto kenangan muncul muter pelan.</p>
+    </section>
+
+    <section id="loveStage" class="love-stage" aria-label="Love particle stage">
+      <canvas id="loveHeartCanvas" class="love-heart-canvas"></canvas>
+
+      <div class="love-orbit-path" aria-hidden="true"></div>
+      <div id="planetRing" class="planet-ring"></div>
+
+      <button id="repairHeartBtn" class="repair-heart-btn" type="button">
+        <span>💗</span> Perbaikin hati mungil kita <span>💗</span>
+      </button>
+
+      <div class="love-mode-controls" aria-label="Kontrol orbit">
+        <div class="drag-hint">↔ geser untuk muter</div>
+        <div class="mode-switch">
+          <button id="autoModeBtn" class="active" type="button">Auto</button>
+          <button id="manualModeBtn" type="button">Manual</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="love-panel love-help-panel">
+      Klik foto buat lihat detail nya yaaa sayangggg🥰🥰🥰🥰.
+    </div>
+  </main>
+
+  <div id="loveModal" class="love-modal" aria-hidden="true">
+    <div class="love-modal-backdrop" data-close-love-modal></div>
+    <article class="love-modal-card" role="dialog" aria-modal="true" aria-label="Preview foto">
+      <button class="love-modal-close" type="button" data-close-love-modal aria-label="Tutup preview">×</button>
+      <img id="loveModalImg" src="" alt="Preview foto">
+      <div class="love-modal-text">
+        <h2 id="loveModalTitle">Foto</h2>
+        <p id="loveModalCaption">Kenangan kita.</p>
+      </div>
+    </article>
+  </div>
+
+  <script src="assets/js/config.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>
